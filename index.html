@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Pokedex</title>
+    
+</head>
+<body>
+    
+    <header> 
+        <img src="./images/logo.png" alt="" width="200px">
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input">
+                <input type="text" name="pokeName" id="pokeNameInput" placeholder="Escribe un pokemón">
+                <button type="submit" onclick="fetchPokemon()">Buscar</button>
+            </div>
+            
+            
+            <div class="info">
+                <div class="up">
+                    <h3 id="number">????</h3>
+                    <div>
+                        <img src="./images/imgDefault.png" alt="" id="pokeImg" width="150px">
+                    </div>
+
+                </div>
+
+                <div class="name">
+                    <h3 id="name">?????</h3>
+                </div>
+                <div class="type">
+                    <img src="./images/typeDefault.png" alt="" class="electric" id="type" width="80px">
+                </div>
+                <div class="general">
+                    <div class="col">
+                        <span id="weight">??? kg</span>
+                        <p>Weight</p>
+                    </div>
+                    <div class="col">
+                        <span id="height">??? m</span>
+                        <p>Height</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <h3>Stats</h3>
+                    <div class="col">
+                        <div class="row">
+                           <p>HP</p>  
+                           <div class="bar">
+                               <div class="value" id="hp" style="background: #d23b47; "></div>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <p>ATK</p>
+                            <div class="bar">
+                                <div class="value" id="atk" style="background: #fea52a"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <p>DEF</p>
+                            <div class="bar">
+                                <div class="value" id="def" style="background: #378e3c;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>SATT</p>
+                            <div class="bar">
+                                <div class="value" id="satt" style="background: #fd6326;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>SDEF</p>
+                            <div class="bar">
+                                <div class="value" id="sdef" style="background: #06620b;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>SPD</p>
+                            <div class="bar">
+                                <div class="value" id="spd" style="background: #00a2ff;"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+
+<footer>
+    <script src="./js/index.js"></script>
+</footer>
+</html>
